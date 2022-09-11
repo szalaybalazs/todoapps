@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import Link from 'next/link';
 import { FC } from 'react';
 import styled from 'styled-components';
@@ -41,6 +42,10 @@ const Spacer = styled.div<iSpacerProps>`
 const NotFound: FC<iNotFoundProps> = () => {
   return (
     <Container>
+      <Head>
+        <title>404 | Todo apps</title>
+        <meta name='description' content='No page found' />
+      </Head>
       <Wrapper>
         <Spacer size={1} />
         <Heading>404 – Page not found</Heading>
