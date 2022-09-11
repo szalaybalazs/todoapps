@@ -16,23 +16,23 @@
 
 A Things 3 inspired todo application, created using five of the major state management libraries:
 
-## [React Context](https://reactjs.org/docs/context.html)
+### [React Context](https://reactjs.org/docs/context.html)
 
 React's built-in state management system to handle more robust applications and application-wide state.
 
-## [Redux](https://redux.js.org/)
+### [Redux](https://redux.js.org/)
 
 One of the most popular react state manager library, maintained by the Redux team.
 
-## [Rematch](https://rematchjs.org/)
+### [Rematch](https://rematchjs.org/)
 
 Builds on the same foundation as Redux, in a much smaller library - with an easier, high-level API.
 
-## [MobX](https://mobx.js.org/README.html)
+### [MobX](https://mobx.js.org/README.html)
 
 An unopinioated state management library, to manage all the application state, completely separated from the UI.
 
-## [Recoil](https://recoiljs.org/)
+### [Recoil](https://recoiljs.org/)
 
 Atom based, MobX inspired state management library, maintained by Facebook
 
