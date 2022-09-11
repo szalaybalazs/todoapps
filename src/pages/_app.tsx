@@ -1,5 +1,7 @@
+import Head from 'next/head';
 import styled from 'styled-components';
 import Footer from '../components/Footer';
+import DocumentHead from '../components/Head';
 import Header from '../components/Header';
 import '../main.scss';
 
@@ -20,6 +22,7 @@ const Content = styled.main`
 function MyApp({ Component, pageProps }) {
   return (
     <Wrapper>
+      <DocumentHead />
       <Header />
       <Content>
         <Component {...pageProps} />
