@@ -1,4 +1,4 @@
-import { FC, useCallback, useEffect, useState } from 'react';
+import { memo, FC, useCallback, useEffect, useState } from 'react';
 import TodoCreate from '../components/TodoCreate';
 import TodoCreatePopup from '../components/TodoCreatePopup';
 
@@ -6,7 +6,7 @@ interface iCreateProps {
   create: (label: string) => void;
 }
 
-const Create: FC<iCreateProps> = ({ create }) => {
+const Create: FC<iCreateProps> = memo(({ create }) => {
   const [isAdding, setIsAdding] = useState(false);
 
   const _handleClose = useCallback(() => setIsAdding(false), []);
@@ -40,6 +40,8 @@ const Create: FC<iCreateProps> = ({ create }) => {
       )}
     </>
   );
-};
+});
+
+Create.displayName = 'CreateInput';
 
 export default Create;

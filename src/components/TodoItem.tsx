@@ -40,9 +40,11 @@ const Checkbox = styled.input`
 const Label = styled.label<{ complete: boolean }>`
   font-size: 0.875rem;
   padding-left: 8px;
-  pointer-events: none;
+  cursor: pointer;
   text-decoration: ${(props) => (props.complete ? 'line-through' : 'none')};
   font-weight: 600;
+  flex: 1;
+  display: block;
 `;
 
 interface iTodoItemProps {

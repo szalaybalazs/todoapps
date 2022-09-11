@@ -19,6 +19,7 @@ const Wrapper = styled.div`
 
   border-radius: 8px;
   width: var(--max-width);
+  max-width: calc(100vw - 48px);
   margin-bottom: calc(33vh);
   box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.1), 0 0 24px 0 rgba(0, 0, 0, 0.075),
     0 0 36px 0 rgba(0, 0, 0, 0.05);

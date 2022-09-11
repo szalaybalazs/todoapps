@@ -1,10 +1,11 @@
 import { computed, makeObservable, observable } from 'mobx';
+import { defaultTodos } from '../../todos';
 import { iTask } from '../../types';
 
 const key = 'mobx_tasks';
 
 export class Store {
-  tasks: iTask[] = [];
+  tasks: iTask[] = defaultTodos;
 
   get todos() {
     return this.tasks.filter((t) => !t.completed);

@@ -1,11 +1,12 @@
 import { createSlice } from '@reduxjs/toolkit';
+import { defaultTodos } from '../../todos';
 import { iTask } from '../../types';
 import { key } from './store';
 
 export const tasksSlice = createSlice({
   name: 'tasks',
   initialState: {
-    tasks: [] as iTask[],
+    tasks: defaultTodos as iTask[],
   },
   reducers: {
     set: (state, action) => {

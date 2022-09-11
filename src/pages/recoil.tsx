@@ -1,5 +1,7 @@
+import dynamic from 'next/dynamic';
 import { FC } from 'react';
-import Recoil from '../routes/Recoil';
+
+const Recoil = dynamic(() => import('../routes/Recoil'), { ssr: false });
 
 const Home: FC = () => {
   return <Recoil />;

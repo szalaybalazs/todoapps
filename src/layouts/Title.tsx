@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { FC, memo } from 'react';
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
@@ -14,12 +14,14 @@ interface iTitleProps {
   title: string;
 }
 
-const Title: FC<iTitleProps> = ({ title }) => {
+const Title: FC<iTitleProps> = memo(({ title }) => {
   return (
     <Wrapper>
       <Heading>⭐️ {title}</Heading>
     </Wrapper>
   );
-};
+});
+
+Title.displayName = 'Title';
 
 export default Title;

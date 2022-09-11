@@ -6,6 +6,7 @@ import {
   useMemo,
   useState,
 } from 'react';
+import { defaultTodos } from '../../todos';
 import { iTask } from '../../types';
 import { TodoContext } from './context';
 
@@ -16,13 +17,13 @@ interface iContextProviderProps {
 const key = '@tasks';
 
 const ContextProvider: FC<iContextProviderProps> = ({ children }) => {
-  const [tasks, setTasks] = useState<iTask[]>([]);
+  const [tasks, setTasks] = useState<iTask[]>(defaultTodos);
 
   const _handleComplete = useCallback(
     (id: string) => {
       const _tasks = [...tasks];
       const index = _tasks.findIndex((t) => t.id === id);
-      _tasks[index].completed = true;
+      _tasks[index] = { ..._tasks[index], completed: true };
       setTasks(_tasks);
       localStorage.setItem(key, JSON.stringify(_tasks));
     },

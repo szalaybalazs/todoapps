@@ -5,6 +5,7 @@ import {
   useRecoilState,
   useRecoilValue,
 } from 'recoil';
+import { iTask } from '../../types';
 import { key } from './key';
 import { tasks as tasksState } from './tasks';
 
@@ -41,13 +42,14 @@ export const useRecoilTasks = () => {
   const _handleComplete = useRecoilCallback(
     ({ snapshot, set }) =>
       async (id: string) => {
-        const tasks = [...(await snapshot.getPromise(tasksState))];
+        const initialTasks = await snapshot.getPromise(tasksState);
+        const taskList: iTask[] = JSON.parse(JSON.stringify(initialTasks));
 
-        const index = tasks.findIndex((t) => t.id === id);
-        tasks[index] = { ...tasks[index], completed: true };
+        const index = taskList.findIndex((t) => t.id === id);
+        if (taskList) taskList[index].completed = true;
 
-        localStorage.setItem(key, JSON.stringify(tasks));
-        set(tasksState, tasks);
+        localStorage.setItem(key, JSON.stringify(taskList));
+        set(tasksState, taskList);
       },
     [],
   );

@@ -1,34 +1,53 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<a id="readme-top" name="readme-top"></a>
 
-## Getting Started
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <h3 align="center">Todo Apps</h3>
 
-First, run the development server:
+  <p align="center">
+    Created the same todo app using five of the major state management libraries
+    <br />
+    <a href="https://szalay.me/articles/todoapps"><strong>Read the full blog post »</strong></a>
+  </p>
+</div>
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+![Product Name Screen Shot](/assets/banner.png)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+A Things 3 inspired todo application, created using five of the major state management libraries:
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## [React Context](https://reactjs.org/docs/context.html)
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+React's built-in state management system to handle more robust applications and application-wide state.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## [Redux](https://redux.js.org/)
 
-## Learn More
+One of the most popular react state manager library, maintained by the Redux team.
 
-To learn more about Next.js, take a look at the following resources:
+## [Rematch](https://rematchjs.org/)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Builds on the same foundation as Redux, in a much smaller library - with an easier, high-level API.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## [MobX](https://mobx.js.org/README.html)
 
-## Deploy on Vercel
+An unopinioated state management library, to manage all the application state, completely separated from the UI.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## [Recoil](https://recoiljs.org/)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Atom based, MobX inspired state management library, maintained by Facebook
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## License
+
+Distributed under the MIT License. See `LICENSE.txt` for more information.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONTACT -->
+
+## Contact
+
+Balazs Szalay - [@szalayme](https://twitter.com/szalayme) - balazs@szalay.me
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>

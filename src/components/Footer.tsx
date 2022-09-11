@@ -43,14 +43,7 @@ const Footer: FC<iFooterProps> = () => {
       <Content>
         <span>
           © 2020-{new Date().getFullYear()}{' '}
-          <a
-            target='_blank'
-            rel='noreferrer'
-            href='https://github.com/szalaybalazs'
-          >
-            Balázs Szalay
-          </a>
-          , All Rights Reserved
+          <a href='https://szalay.me'>Balázs Szalay</a>, All Rights Reserved
         </span>
         <span>
           Contacts: <Link href='mailto:balazs@szalay.me' label='Email' />{' '}
